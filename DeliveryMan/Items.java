@@ -1,4 +1,10 @@
 
+/**
+ * 
+ * Content of the order.
+ * @author ³¯¼w¦w
+ *
+ */
 public class Items {
 	private String name;
 	private int price;

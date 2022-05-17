@@ -77,4 +77,15 @@ public class DeliveryMan {
 	public boolean getIsOrderArrived() {
 		return this.isOrderArrived;
 	}
+	
+	/**
+	 * 
+	 * ¬d¬Ý¾ú¥v­q³æ
+	 * 
+	 * @param store - Object in the type of Class Stores
+	 * @return History order list of the store.
+	 */
+	public Orders[] getOrderList(Stores store) {
+		return store.getOrderList();
+	}
 }

@@ -1,4 +1,11 @@
 
+/**
+ * 
+ * Exception of DeliveryMan.
+ * 
+ * @author 許祐嘉
+ *
+ */
 public class deliveryManException extends Exception {
 	
 	private static final long serialVersionUID = 1L;
@@ -6,9 +13,12 @@ public class deliveryManException extends Exception {
 	private String errMsg;
 	
 	public enum exceptionType {
-		ImBusyNow
+		ImBusyNow// 還有什麼例外情況?
 	}
 	
+	/**
+	 * @param ex - Exception that is sended from {@code DeliveryMan}.
+	 */
 	deliveryManException(exceptionType ex) {
 		switch (ex) {
 		case ImBusyNow:
@@ -19,6 +29,9 @@ public class deliveryManException extends Exception {
 		}
 	}
 	
+	/**
+	 * @return Error message of certain exception.
+	 */
 	public String getErrorMessage() {
 		return errMsg;
 	}

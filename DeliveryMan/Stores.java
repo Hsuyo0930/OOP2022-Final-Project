@@ -1,4 +1,11 @@
 
+/**
+ * 
+ * Stores Class
+ * 
+ * @author 陳德安
+ *
+ */
 public class Stores {
 	// 助教提供的商家資訊的規格定義
 	

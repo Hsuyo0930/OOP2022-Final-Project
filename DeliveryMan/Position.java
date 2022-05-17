@@ -1,4 +1,10 @@
 
+/**
+ * Position Class.
+ * 
+ * @author ³¯¼w¦w
+ *
+ */
 public class Position {
 	private String address;
 	private String latitude;

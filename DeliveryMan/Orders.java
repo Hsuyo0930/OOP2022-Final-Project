@@ -1,4 +1,10 @@
 
+/**
+ * 
+ * 訂單Class
+ * @author 陳德安
+ *
+ */
 public class Orders {
 	private int number;// 訂單編號
 	private Items[] items;// 餐點

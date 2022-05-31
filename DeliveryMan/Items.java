@@ -1,19 +1,28 @@
-
 /**
  * 
- * Content of the order.
- * @author ³¯¼w¦w
- *
+ * @author yuhanchiang, deanchenn
+ * @version 2022/5/29 ver.1
+ * @changes
+ * added: 
+ * changed: 
+ * 
  */
 public class Items {
 	private String name;
-	private int price;
+	private String price;
 	
 	public String getName() {
 		return name;
 	}
-	
-	public int getPrice() {
+	public String getPrice() {
 		return price;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void setPrice(String string) {
+		this.price = string;
 	}
 }

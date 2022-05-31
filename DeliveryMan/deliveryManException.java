@@ -1,10 +1,13 @@
-
 /**
  * 
  * Exception of DeliveryMan.
  * 
  * @author ³\¯§¹Å
- *
+ * @version ver.0
+ * @changes
+ * added: 
+ * changed: 
+ * 
  */
 public class deliveryManException extends Exception {
 	

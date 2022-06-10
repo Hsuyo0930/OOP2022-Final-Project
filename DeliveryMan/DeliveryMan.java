@@ -7,7 +7,7 @@ import java.util.Queue;
  * @author 許祐嘉,deanchenn
  * @version 2022/5/31 ver.3
  * @changes added: <br>
- *          1. 新增外送員位置:F
+ *          1. 新增外送員位置:
  *          {@code Position deliveryManPosition}、{@code String globalDeliveryManPosition}<br>
  *          2. 新增外送員API: {@code deliveryManAPI}，但還不確定API method的輸入跟輸出是什麼<br>
  *          3. 計算訂單運送所需時間: {@code calcDeliverTime()}，計算方法需要跟API方法確認再修改<br>
@@ -26,6 +26,8 @@ public class DeliveryMan {
 	private Queue<Orders> currentOrder;// 目前訂單
 	private Position deliveryManPosition;// 外送員位置
 	private API deliveryManAPI;
+	private String account;
+	private String password;
 //	private boolean isOrderArrived = false;// 是否送達訂單
 	
 	/**
@@ -41,6 +43,8 @@ public class DeliveryMan {
 	 */
 	public DeliveryMan(String account, String password, int phoneNumber, String emailAccount, String deliveryManName,
 			Queue<Orders> orders, API deliveryManAPI, Position deliveryManPosition) {
+		this.account = account;
+		this.password = password;
 		this.phoneNumber = phoneNumber;
 		this.deliveryManName = deliveryManName;
 		this.currentOrder = orders;
@@ -49,6 +53,22 @@ public class DeliveryMan {
 	}
 	
 	// get set
+	
+	public void setAccount(String account) {
+		this.account = account;
+	}
+	
+	public String getAccount() {
+		return account;
+	}
+	
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
 	
 	public void setDeliveryManAPI(API deliveryManAPI) {
 		this.deliveryManAPI = deliveryManAPI;
